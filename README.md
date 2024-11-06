@@ -66,4 +66,4 @@ Tarea3/
 
 3. Abre el archivo index.html en tu navegador para ver el sitio.
 
-¡Gracias por su la visualización! 🙌🏻
+¡Gracias por su visualización! 🙌🏻
