@@ -1,20 +1,22 @@
+@use '../abstracts/variables';
+
 .navbar {
-    background-color: $background-color; // Utiliza el fondo claro definido
+    background-color: variables.$background-color; // Utiliza el fondo claro definido
 }
 
 .navbar-nav .nav-link {
-    color: $link-color; // Color de texto para los enlaces
+    color: variables.$link-color; // Color de texto para los enlaces
 }
 
 .navbar-nav .nav-link:hover {
-    color: $link-hover-color; // Color de texto más oscuro al pasar el mouse
+    color: variables.$link-hover-color; // Color de texto más oscuro al pasar el mouse
 }
 
 .btn-danger {
-    background-color: $secondary-color; // Color del botón
-    border-color: $secondary-color;
+    background-color: variables.$secondary-color; // Color del botón
+    border-color: variables.$secondary-color;
 }
 
 .btn-danger:hover {
-    background-color: darken($secondary-color, 10%); // Color más oscuro al pasar el mouse
+    background-color: darken(variables.$secondary-color, 10%); // Color más oscuro al pasar el mouse
 }

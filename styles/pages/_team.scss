@@ -2,92 +2,91 @@
 @use '../abstracts/mixins';
 
 .team-section {
-    padding: 2rem;
-    background-color: variables.$background-color; // Fondo claro para la sección
+    padding: 2rem; // Espaciado superior e inferior
+    background-color: variables.$background-color; // Fondo claro
 
     &__title {
-        text-align: center;
+        text-align: center; // Centrar el título
         color: variables.$primary-color; // Color principal para el título
-        font-size: 2rem;
-        margin-bottom: 1.5rem;
+        font-size: 2rem; // Tamaño de fuente
+        margin-bottom: 1.5rem; // Espacio inferior
     }
 
     &__description {
-        text-align: center;
-        font-size: 1.1rem;
-        color: variables.$text-color;
-        margin-bottom: 2rem;
+        text-align: center; // Centrar la descripción
+        font-size: 1.1rem; // Tamaño de fuente
+        color: variables.$text-color; // Color del texto
+        margin-bottom: 2rem; // Espacio inferior
     }
 
     &__members {
-        display: flex;
-        justify-content: space-between;
-        gap: 1.5rem;
-        flex-wrap: wrap;
+        display: flex; // Usar flexbox para alinear los miembros
+        justify-content: space-between; // Espaciado entre columnas
+        gap: 1.5rem; // Espacio entre tarjetas
+        flex-wrap: wrap; // Permitir que las tarjetas se envuelvan
     }
 
     &__card {
-        background-color: #fff;
-        border: none;
-        @include mixins.border-radius(10px);
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        padding: 2rem;
-        width: calc(25% - 1.5rem);
-        max-width: 280px;
-        text-align: center;
-        margin-bottom: 1.5rem;
-        transition: transform 0.3s, box-shadow 0.3s;
+        background-color: #fff; // Fondo blanco para las tarjetas
+        border: none; // Sin borde
+        @include mixins.border-radius(10px); // Bordes redondeados
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); // Sombra
+        padding: 2rem; // Relleno interno
+        width: calc(25% - 1.5rem); // Ancho calculado
+        max-width: 280px; // Ancho máximo
+        text-align: center; // Centrar texto
+        margin-bottom: 1.5rem; // Espacio inferior
+        transition: transform 0.3s, box-shadow 0.3s; // Transiciones suaves
 
         &:hover {
-            transform: translateY(-2px); // hover
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transform: translateY(-2px); // Efecto al pasar el mouse
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); // Sombra más pronunciada
         }
 
         &-image {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-            border-radius: 15px 15px 0 0;
-            margin-bottom: 1rem;
+            width: 100%; // Ancho completo
+            height: auto; // Altura automática
+            object-fit: cover; // Ajustar imagen
+            border-radius: 15px 15px 0 0; // Bordes redondeados en la parte superior
+            margin-bottom: 1rem; // Espacio inferior
         }
 
         &-title {
-            font-size: 1.5rem;
-            color: variables.$secondary-color; // Color secundario para el nombre del doctor
-            margin-bottom: 0.5rem;
+            font-size: 1.5rem; // Tamaño del nombre
+            color: variables.$secondary-color; // Color del nombre
+            margin-bottom: 0.5rem; // Espacio inferior
         }
 
         &-specialty {
-            font-size: 1.1rem;
-            color: variables.$text-color; // Color de texto principal
+            font-size: 1.1rem; // Tamaño de especialidad
+            color: variables.$text-color; // Color del texto
         }
 
         &-description {
-            font-size: 1rem;
+            font-size: 1rem; // Tamaño de descripción
             color: variables.$text-muted-color; // Color de texto secundario
         }
     }
 }
 
-
+// Estilos responsivos
 @media (max-width: 768px) {
     .team-section {
-        padding: 1rem;
+        padding: 1rem; // Relleno ajustado para pantallas pequeñas
 
         &__card {
-            width: 100%;
-            padding: 1rem;
+            width: 100%; // Tarjetas ocupan el 100% del ancho
+            padding: 1rem; // Relleno ajustado
         }
 
         &__title {
-            font-size: 1.5rem;
+            font-size: 1.5rem; // Tamaño de título ajustado
         }
 
         &__card-title,
         &__card-specialty,
         &__card-description {
-            font-size: 0.85rem;
+            font-size: 0.85rem; // Tamaño de texto ajustado para tarjetas
         }
     }
-
 }

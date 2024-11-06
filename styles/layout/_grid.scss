@@ -1,0 +1,46 @@
+@use 'sass:math';
+@use '../abstracts/variables'; // Importar tus variables
+
+// Variables de configuración de la cuadrícula
+$grid-gutter-width: 1.5rem; // Ancho del espaciado entre columnas
+
+// Estilos de la cuadrícula
+.container {
+    max-width: 1200px; // Ancho máximo del contenedor
+    margin-right: auto; // Centrado automático
+    margin-left: auto; // Centrado automático
+    padding-right: math.div($grid-gutter-width, 2); // Espaciado a la derecha
+    padding-left: math.div($grid-gutter-width, 2); // Espaciado a la izquierda
+}
+
+.row {
+    display: flex; // Usar flexbox para filas
+    flex-wrap: wrap; // Permitir que las columnas se envuelvan
+    
+    > [class*='col-'] {
+        padding-right: math.div($grid-gutter-width, 2); // Espaciado interno
+        padding-left: math.div($grid-gutter-width, 2); // Espaciado interno
+    }
+}
+
+// Definición de columnas
+.col {
+    flex: 0 0 auto; // Flexbox para permitir el ajuste
+    width: 100%; // Por defecto, ocupa todo el ancho
+}
+
+@for $i from 1 through 12 {
+    .col-#{$i} {
+        flex: 0 0 math.div(100 * $i, 12); // Ancho de columna basado en la fracción de 12
+        max-width: math.div(100 * $i, 12); // Máximo ancho
+    }
+}
+
+// Ejemplo de clases de visibilidad
+.hidden {
+    display: none; // Ocultar elemento
+}
+
+.visible {
+    display: block; // Mostrar elemento
+}

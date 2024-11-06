@@ -1,0 +1,27 @@
+@use '../abstracts/variables';
+
+.container {
+    margin-top: 50px; // Espacio superior para la sección del formulario
+}
+
+h2 {
+    color: variables.$primary-color; // Color del título
+}
+
+input, textarea {
+    border: 1px solid #ced4da; // Borde gris claro
+}
+
+input:focus, textarea:focus {
+    border-color: variables.$link-color; // Color de borde al enfocar
+    box-shadow: 0 0 0 0.2rem rgba(variables.$link-color, 0.25); // Sombra al enfocar
+}
+
+button {
+    background-color: variables.$primary-color; // Color de fondo del botón
+    border: none; // Sin borde
+
+    &:hover {
+        background-color: darken(variables.$primary-color, 10%); // Color más oscuro al pasar el mouse
+    }
+}

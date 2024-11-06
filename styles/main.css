@@ -8107,6 +8107,27 @@ button:hover, .btn:hover {
   background-color: #0056b3;
 }
 
+.navbar {
+  background-color: #f8f9fa;
+}
+
+.navbar-nav .nav-link {
+  color: #007bff;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #0056b3;
+}
+
+.btn-danger {
+  background-color: #495057;
+  border-color: #495057;
+}
+
+.btn-danger:hover {
+  background-color: #32373b;
+}
+
 .footer {
   background-color: #343a40;
   color: #ffffff;
@@ -8136,8 +8157,188 @@ button:hover, .btn:hover {
   text-decoration: underline;
 }
 
-#bienvenida {
-  margin-top: 10px;
+.container {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row > [class*=col-] {
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+}
+
+.col {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.col-1 {
+  flex: 0 0 8.3333333333;
+  max-width: 8.3333333333;
+}
+
+.col-2 {
+  flex: 0 0 16.6666666667;
+  max-width: 16.6666666667;
+}
+
+.col-3 {
+  flex: 0 0 25;
+  max-width: 25;
+}
+
+.col-4 {
+  flex: 0 0 33.3333333333;
+  max-width: 33.3333333333;
+}
+
+.col-5 {
+  flex: 0 0 41.6666666667;
+  max-width: 41.6666666667;
+}
+
+.col-6 {
+  flex: 0 0 50;
+  max-width: 50;
+}
+
+.col-7 {
+  flex: 0 0 58.3333333333;
+  max-width: 58.3333333333;
+}
+
+.col-8 {
+  flex: 0 0 66.6666666667;
+  max-width: 66.6666666667;
+}
+
+.col-9 {
+  flex: 0 0 75;
+  max-width: 75;
+}
+
+.col-10 {
+  flex: 0 0 83.3333333333;
+  max-width: 83.3333333333;
+}
+
+.col-11 {
+  flex: 0 0 91.6666666667;
+  max-width: 91.6666666667;
+}
+
+.col-12 {
+  flex: 0 0 100;
+  max-width: 100;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+h2 {
+  color: #007bff;
+}
+
+input, textarea {
+  border: 1px solid #ced4da;
+}
+
+input:focus, textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+button {
+  background-color: #007bff;
+  border: none;
+}
+button:hover {
+  background-color: #0062cc;
+}
+
+.introduction,
+.services,
+.gallery,
+.news,
+.cta {
+  margin: 50px 0;
+  text-align: center;
+}
+.introduction h2,
+.services h2,
+.gallery h2,
+.news h2,
+.cta h2 {
+  color: #007bff;
+  margin-bottom: 20px;
+}
+.introduction p,
+.services p,
+.gallery p,
+.news p,
+.cta p {
+  color: #212529;
+  font-size: 1rem;
+}
+
+.introduction {
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+.services .row {
+  margin-top: 20px;
+}
+.services .row h3 {
+  color: #495057;
+}
+.services .row p {
+  font-size: 0.9rem;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.news ul {
+  list-style-type: none;
+  padding: 0;
+}
+.news ul li {
+  margin-bottom: 10px;
+  color: #6c757d;
+}
+
+.cta {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+}
+.cta a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.cta a:hover {
+  text-decoration: underline;
 }
 
 .team-section {
@@ -8176,7 +8377,7 @@ button:hover, .btn:hover {
 }
 .team-section__card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 .team-section__card-image {
   width: 100%;
@@ -8214,4 +8415,77 @@ button:hover, .btn:hover {
   .team-section__card-title, .team-section__card-specialty, .team-section__card-description {
     font-size: 0.85rem;
   }
+}
+/* Estilos generales */
+body {
+  background-color: #f8f9fa; /* Fondo gris claro */
+  color: #343a40; /* Texto gris oscuro */
+  margin: 0; /* Eliminar márgenes */
+  padding: 0; /* Eliminar relleno */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Asegura que el footer esté al final */
+}
+
+/* Títulos */
+h1, h2, h3 {
+  color: #00ADCD; /* Azul para títulos */
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+  background-color: #ffffff; /* Fondo blanco para la navbar */
+}
+
+.navbar-nav .nav-link {
+  color: #007bff; /* Color de texto azul para los enlaces */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #0056b3; /* Color de texto azul más oscuro al pasar el mouse */
+}
+
+.btn-danger {
+  background-color: #ff5722; /* Color de fondo para el botón de reservar cita */
+  border-color: #ff5722; /* Color del borde del botón */
+}
+
+.btn-danger:hover {
+  background-color: #e64a19; /* Color del botón al pasar el mouse */
+}
+
+/* Estilos para las tarjetas */
+.card {
+  border: none; /* Sin borde en las tarjetas */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para las tarjetas */
+}
+
+/* Estilos para el pie de página */
+footer {
+  width: 100%; /* Asegura que el pie de página ocupe todo el ancho */
+  position: relative; /* Para el posicionamiento del footer */
+  background-color: #343a40; /* Fondo gris oscuro */
+  color: white; /* Texto blanco en el pie de página */
+  padding: 30px 0; /* Relleno superior e inferior */
+  margin-top: auto; /* Para que el footer se mantenga al final */
+}
+
+/* Estilos de contacto */
+input, textarea {
+  border: 1px solid #ced4da; /* Borde gris claro */
+}
+
+input:focus, textarea:focus {
+  border-color: #80bdff; /* Color de borde al enfocar */
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Sombra al enfocar */
+}
+
+.map-container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+.map-container iframe {
+  width: 100%;
+  height: 450px;
+  border: 0;
 }/*# sourceMappingURL=main.css.map */

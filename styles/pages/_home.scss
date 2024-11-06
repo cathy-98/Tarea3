@@ -1,4 +1,81 @@
-#bienvenida
-{
-    margin-top: 10px;
+@use '../abstracts/variables'; // Importa las variables
+
+// Estilos Generales para las Secciones
+.introduction,
+.services,
+.gallery,
+.news,
+.cta {
+    margin: 50px 0; // Margen superior e inferior
+    text-align: center; // Centrar el texto
+
+    h2 {
+        color: variables.$primary-color; // Color del título
+        margin-bottom: 20px; // Margen inferior
+    }
+
+    p {
+        color: variables.$text-color; // Color del texto
+        font-size: 1rem; // Tamaño de fuente
+    }
+}
+
+// Estilos para la Sección de Introducción
+.introduction {
+    background-color: variables.$background-color; // Fondo claro
+    padding: 20px; // Relleno interno
+}
+
+// Estilos para la Sección de Servicios
+.services {
+    .row {
+        margin-top: 20px; // Espacio superior para la fila de servicios
+
+        h3 {
+            color: variables.$secondary-color; // Color de los títulos de servicios
+        }
+
+        p {
+            font-size: 0.9rem; // Tamaño de fuente más pequeño para las descripciones
+        }
+    }
+}
+
+// Estilos para la Galería
+.gallery {
+    img {
+        width: 100%; // Asegurar que las imágenes sean responsivas
+        border-radius: 8px; // Bordes redondeados
+        margin-bottom: 15px; // Espacio inferior entre imágenes
+    }
+}
+
+// Estilos para la Sección de Noticias
+.news {
+    ul {
+        list-style-type: none; // Sin viñetas
+        padding: 0; // Sin relleno
+
+        li {
+            margin-bottom: 10px; // Espacio entre elementos de la lista
+            color: variables.$text-muted-color; // Color para las noticias
+        }
+    }
+}
+
+// Estilos para el Llamado a la Acción (CTA)
+.cta {
+    background-color: variables.$primary-color; // Fondo del CTA
+    color: variables.$text-light-color; // Color del texto
+    padding: 20px; // Relleno
+    border-radius: 8px; // Bordes redondeados
+
+    a {
+        color: variables.$text-light-color; // Color del enlace
+        text-decoration: none; // Sin subrayado
+
+        &:hover {
+            text-decoration: underline; // Subrayado al pasar el mouse
+        }
+    }
 }

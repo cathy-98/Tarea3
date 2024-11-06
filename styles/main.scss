@@ -80,3 +80,13 @@ input:focus, textarea:focus {
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Sombra al enfocar */
 }
 
+.map-container {
+    max-width: 100%; // Asegura que el contenedor no exceda el ancho
+    margin: 0 auto; // Centra el mapa
+
+    iframe {
+        width: 100%; // Ancho completo
+        height: 450px; // Altura fija
+        border: 0; // Sin borde
+    }
+}
