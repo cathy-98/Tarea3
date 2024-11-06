@@ -8470,19 +8470,43 @@ footer {
   margin-top: auto; /* Para que el footer se mantenga al final */
 }
 
-/* Estilos de contacto */
-input, textarea {
-  border: 1px solid #ced4da; /* Borde gris claro */
+.contact-form-section {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f8f9fa;
 }
-
-input:focus, textarea:focus {
-  border-color: #80bdff; /* Color de borde al enfocar */
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Sombra al enfocar */
+.contact-form-section h2 {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 1.5rem;
+}
+.contact-form-section .form-label {
+  color: #212529;
+}
+.contact-form-section .form-control {
+  padding: 0.5rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+.contact-form-section button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #495057;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.contact-form-section button:hover {
+  background-color: #32373b;
 }
 
 .map-container {
   max-width: 100%;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 .map-container iframe {
   width: 100%;

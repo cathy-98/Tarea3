@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - Hospital San José</title>
-    <link rel="stylesheet" href="styles/vendors/bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="styles/main.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hospital - Contacto</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Bootstrap Icons -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+        <link rel="stylesheet" href="styles/main.css"> <!-- Estilos personalizados -->
+    </head>
 <body>
 
     <header>
@@ -14,21 +17,23 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    <img src="https://i0.wp.com/hospitalbaseosorno.cl/wp-content/uploads/2020/11/hbo_logoweb.png" alt="Hospital Logo" height="50">
+                    <img src="https://i0.wp.com/hospitalbaseosorno.cl/wp-content/uploads/2020/11/hbo_logoweb.png"
+                        alt="Hospital Logo" height="50">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Inicio</a>
+                            <a class="nav-link " href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="team.html">Equipo Médico</a>
+                            <a class="nav-link" href="team.html">Equipo Médico</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contacto</a>
+                            <a class="nav-link active" href="contact.html">Contacto</a>
                         </li>
                         <li class="nav-item">
                             <a class="btn btn-danger ms-3" href="#">Reservar Cita</a>
@@ -37,19 +42,36 @@
                 </div>
             </div>
         </nav>
-        
     </header>
 
-    <section class="contact-section">
-        <h2>Contacto</h2>
+    <section class="contact-form-section">
+        <h2>Contáctanos</h2>
         <p>Para más información, no dudes en ponerte en contacto con nosotros.</p>
-
+        <form action="tu_accion.php" method="POST">
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingrese su nombre" required>
+            </div>
+            <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="Ingrese su correo" required>
+            </div>
+            <div class="mb-3">
+                <label for="formGroupMessage" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="formGroupMessage" rows="4" placeholder="Escriba su mensaje aquí" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-danger">Enviar</button>
+        </form>
+    </section>
+    
+    
         <div class="map-container">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345091306!2d144.95373531531567!3d-37.81720997975119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f1f2efb%3A0x2b13de7064fd062b!2sHospital%20San%20Jos%C3%A9!5e0!3m2!1ses-419!2scl!4v1626740624965!5m2!1ses-419!2scl" 
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </section>
 
+    
     <footer class="footer text-center py-3 mt-auto">
         <div class="footer__container container-fluid">
             <p class="footer__contact text-white">Mesa Central: 64 2 336200 | Email para información general: informacioneshbo@redsalud.gov.cl</p>
@@ -62,7 +84,10 @@
         </div>
     </footer>
 
-    <script src="js/jquery/jquery-3.6.0.js"></script>
-    <script src="js/bootstrap/bootstrap.js"></script>
+<!-- jQuery (opcional en Bootstrap 5) -->
+<script src="js/jquery/jquery-3.6.0.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

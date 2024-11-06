@@ -70,23 +70,53 @@ footer {
     margin-top: auto; /* Para que el footer se mantenga al final */
 }
 
-/* Estilos de contacto */
-input, textarea {
-    border: 1px solid #ced4da; /* Borde gris claro */
-}
 
-input:focus, textarea:focus {
-    border-color: #80bdff; /* Color de borde al enfocar */
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Sombra al enfocar */
+.contact-form-section {
+    max-width: 600px; // Ancho máximo para el formulario
+    margin: 0 auto; // Centra el formulario
+    padding: 2rem; // Espacio alrededor del formulario
+    background-color: variables.$background-color; // Fondo claro para la sección
+
+    h2 {
+        text-align: center; // Centrar el título
+        color: variables.$primary-color; // Color del título
+        margin-bottom: 1.5rem; // Espacio inferior
+    }
+
+    .form-label {
+        color: variables.$text-color; // Color del texto de las etiquetas
+    }
+
+    .form-control {
+        padding: 0.5rem; // Espaciado interno
+        border: 1px solid #ced4da; // Borde del campo
+        border-radius: 4px; // Bordes redondeados
+        font-size: 1rem; // Tamaño de fuente
+    }
+
+    button {
+        display: block; // Botón en una nueva línea
+        width: 100%; // Ancho completo
+        padding: 0.75rem; // Espaciado interno
+        background-color: variables.$secondary-color; // Color del botón
+        color: white; // Color del texto
+        border: none; // Sin borde
+        border-radius: 4px; // Bordes redondeados
+        cursor: pointer; // Cambiar el cursor al pasar el mouse
+
+        &:hover {
+            background-color: darken(variables.$secondary-color, 10%); // Color más oscuro al pasar el mouse
+        }
+    }
 }
 
 .map-container {
     max-width: 100%; // Asegura que el contenedor no exceda el ancho
-    margin: 0 auto; // Centra el mapa
+    margin: 20px auto; // Centra el mapa y añade un margen superior
 
     iframe {
         width: 100%; // Ancho completo
-        height: 450px; // Altura fija
+        height: 450px; // Aumenta la altura si es necesario
         border: 0; // Sin borde
     }
 }
