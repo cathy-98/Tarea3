@@ -1,4 +1,4 @@
-# README para el Proyecto de Ciberseguridad: Hospital Base San José
+# README para el Proyecto: Hospital Base San José
 
 ## Descripción del Proyecto
 
@@ -6,13 +6,11 @@ Este proyecto es un sitio web para el **Hospital Base San José**, diseñado par
 
 ## Tabla de Contenidos
 
-1. [Características](#características)
-2. [Tecnologías Utilizadas](#tecnologías-utilizadas)
-3. [Estructura del Proyecto](#estructura-del-proyecto)
-4. [Instrucciones de Instalación](#instrucciones-de-instalación)
-5. [Uso](#uso)
-6. [Contribuciones](#contribuciones)
-7. [Licencia](#licencia)
+1. [Descripción del Proyecto](#descripción-del-proyecto)
+2. [Características](#características)
+3. [Tecnologías Utilizadas](#tecnologías-utilizadas)
+4. [Estructura del Proyecto](#estructura-del-proyecto)
+5. [Instrucciones de Instalación](#instrucciones-de-instalación)
 
 ## Características
 
@@ -33,8 +31,29 @@ Este proyecto es un sitio web para el **Hospital Base San José**, diseñado par
 
 Actualmente, todos los archivos están organizados en la carpeta principal del proyecto:
 
+
 ```
-Tarea3/ ├── index.html # Página principal del hospital ├── contact.html # Página de contacto ├── team.html # Página del equipo médico │ ├── styles/ # Carpeta que contiene los estilos │ ├── abstracts/ # Contiene variables y mixins │ │ ├── _mixins.scss │ │ └── _variables.scss │ ├── base/ # Estilos base │ │ └── _base.scss │ ├── layout/ # Estructura del diseño │ │ ├── _footer.scss │ │ ├── _grid.scss │ │ ├── _header.scss │ │ └── _navigation.scss │ ├── pages/ # Estilos específicos de cada página │ │ ├── _contact.scss │ │ ├── _home.scss │ │ └── _team.scss │ └── main.scss # Archivo principal de estilos SCSS │ ├── img/ # Imágenes utilizadas en el sitio │ ├── doctor1.webp │ ├── doctor2.webp │ ├── doctor3.webp │ └── doctor4.webp │ └── js/ # Archivos JavaScript ├── jquery/jquery-3.6.0.js └── bootstrap/bootstrap.js
+Tarea3/
+├── index.html                # Página principal del hospital
+├── contact.html              # Página de contacto
+├── team.html                 # Página del equipo médico
+├── styles/                   # Carpeta que contiene los estilos
+│   ├── abstracts/            # Contiene variables y mixins
+│   │   ├── _mixins.scss
+│   │   └── _variables.scss
+│   ├── base/                 # Estilos base
+│   │   └── _base.scss
+│   ├── layout/               # Estructura del diseño
+│   │   ├── _footer.scss
+│   │   ├── _grid.scss
+│   │   ├── _header.scss
+│   │   └── _navigation.scss
+│   ├── pages/                # Estilos específicos de cada página
+│   │   ├── _contact.scss
+│   │   ├── _home.scss
+│   │   └── _team.scss
+│   └── main.scss             # A
+
 ```
 
 ## Instrucciones de Instalación
@@ -47,3 +66,4 @@ Tarea3/ ├── index.html # Página principal del hospital ├── contact.
 
 3. Abre el archivo index.html en tu navegador para ver el sitio.
 
+¡Gracias por su la visualización! 🙌🏻
