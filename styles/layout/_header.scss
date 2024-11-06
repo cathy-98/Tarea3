@@ -1,0 +1,20 @@
+.navbar {
+    background-color: $background-color; // Utiliza el fondo claro definido
+}
+
+.navbar-nav .nav-link {
+    color: $link-color; // Color de texto para los enlaces
+}
+
+.navbar-nav .nav-link:hover {
+    color: $link-hover-color; // Color de texto más oscuro al pasar el mouse
+}
+
+.btn-danger {
+    background-color: $secondary-color; // Color del botón
+    border-color: $secondary-color;
+}
+
+.btn-danger:hover {
+    background-color: darken($secondary-color, 10%); // Color más oscuro al pasar el mouse
+}

@@ -15,3 +15,68 @@
 @use 'pages/contact';
 @use 'pages/home';
 @use 'pages/team';
+
+/* Estilos generales */
+body {
+    background-color: #f8f9fa; /* Fondo gris claro */
+    color: #343a40; /* Texto gris oscuro */
+    margin: 0; /* Eliminar márgenes */
+    padding: 0; /* Eliminar relleno */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el footer esté al final */
+}
+
+/* Títulos */
+h1, h2, h3 {
+    color: #00ADCD; /* Azul para títulos */
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: #ffffff; /* Fondo blanco para la navbar */
+}
+
+.navbar-nav .nav-link {
+    color: #007bff; /* Color de texto azul para los enlaces */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #0056b3; /* Color de texto azul más oscuro al pasar el mouse */
+}
+
+.btn-danger {
+    background-color: #ff5722; /* Color de fondo para el botón de reservar cita */
+    border-color: #ff5722; /* Color del borde del botón */
+}
+
+.btn-danger:hover {
+    background-color: #e64a19; /* Color del botón al pasar el mouse */
+}
+
+/* Estilos para las tarjetas */
+.card {
+    border: none; /* Sin borde en las tarjetas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para las tarjetas */
+}
+
+/* Estilos para el pie de página */
+footer {
+    width: 100%; /* Asegura que el pie de página ocupe todo el ancho */
+    position: relative; /* Para el posicionamiento del footer */
+    background-color: #343a40; /* Fondo gris oscuro */
+    color: white; /* Texto blanco en el pie de página */
+    padding: 30px 0; /* Relleno superior e inferior */
+    margin-top: auto; /* Para que el footer se mantenga al final */
+}
+
+/* Estilos de contacto */
+input, textarea {
+    border: 1px solid #ced4da; /* Borde gris claro */
+}
+
+input:focus, textarea:focus {
+    border-color: #80bdff; /* Color de borde al enfocar */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Sombra al enfocar */
+}
+
